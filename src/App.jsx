@@ -10,9 +10,11 @@ const fetchData=fetch("/players.json").then((res) => res.json())
 
 const App = () => {
   const [toggle,setToggle]=useState("fuck");
+  const [availableBalance, setAvailableBalance] = useState(6000000);
+  const [purchesedPlayers,setpurchesedPlayers]=useState([]);
   return (
     <div className="">
-      <Navbar />
+      <Navbar availableBalance={availableBalance} />
 
       <div className="max-w-[1200px] mx-auto my-4 flex justify-between items-center">
         <div>
@@ -22,7 +24,7 @@ const App = () => {
           <button
             onClick={() => setToggle("fuck")}
             className={`py-3 px-6 ${
-              toggle ==="fuck" && "bg-amber-300"
+              toggle === "fuck" && "bg-amber-300"
             } rounded-l-3xl  cursor-pointer `}
           >
             available
@@ -30,7 +32,7 @@ const App = () => {
           <button
             onClick={() => setToggle("you")}
             className={`py-3 px-4 rounded-r-3xl ${
-              toggle ==="you" ? "bg-amber-300" :null
+              toggle === "you" && "bg-amber-300" 
             } border-1 border-gray-200 cursor-pointer`}
           >
             selected <span>0</span>
@@ -38,9 +40,15 @@ const App = () => {
         </div>
       </div>
 
-      {toggle ==="fuck" ? (
+      {toggle === "fuck" ? (
         <Suspense fallback={<h1>loading...</h1>}>
-          <AvailablePlayers fetchData={fetchData} />
+          <AvailablePlayers
+            fetchData={fetchData}
+            setAvailableBalance={setAvailableBalance}
+            availableBalance={availableBalance}
+            purchesedPlayers={purchesedPlayers}
+            setpurchesedPlayers={setpurchesedPlayers}
+          />
         </Suspense>
       ) : (
         <SelectedPlayers />
