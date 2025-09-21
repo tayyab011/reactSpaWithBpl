@@ -1,0 +1,102 @@
+[
+  {
+    "player_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EI_C0BWDBHpTvOVDAQKLKQGwO-LIxojJRoHCpHjXDbhpuH5npQ_AC7K2P48biKixRtxkSVAhIyV1y92FQmyKkpqjQAF1kjebsioXG8s",
+    "player_name": "Kevin O'Brien",
+    "player_country": "Ireland",
+    "playing_role": "All-rounder",
+    "rating": 8.1,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium-fast",
+    "price": 500000
+  },
+  {
+    "player_image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSKiKhITIod4sQ4K2qL9yBYilcHtcYCAunNHDF33SvPpue5lTRDqAGXAK7ML4Tr0LTBZ_rQ-m4YrXoXk08",
+    "player_name": "Chris Gayle",
+    "player_country": "West Indies",
+    "playing_role": "Batsman",
+    "rating": 9.2,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm offbreak",
+    "price": 1600000
+  },
+  {
+    "player_image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQSgFVnDU9lz3URsxyglRglGbg8Ig6KnP4pCXpjLcmS4JAJ0SsPcu_AyMffBGnCNtUe8d_IbSNSNpPuDGg",
+    "player_name": "Sunil Narine",
+    "player_country": "West Indies",
+    "playing_role": "Bowler",
+    "rating": 8.7,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm offbreak",
+    "price": 950000
+  },
+  {
+    "player_image": "https://example.com/images/glenn_phillips.png",
+    "player_name": "Glenn Phillips",
+    "player_country": "New Zealand",
+    "playing_role": "Wicket-keeper",
+    "rating": 8.5,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak",
+    "price": 720000
+  },
+  {
+    "player_image": "https://example.com/images/mahmudullah2.png",
+    "player_name": "Soumya Sarkar",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 7.9,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm medium",
+    "price": 480000
+  },
+  {
+    "player_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_Kj_AOohrTQGGTcF6Zs1PZnlDNOJkznyxBzXYFDqEwA6BRh1s3ozzldzSAPdS7VvQJzYCONE58-FelU5PKPZeUaP_MCCzo9LGlkOXlj4_uA",
+    "player_name": "Mashrafe Mortaza",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 8.0,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium-fast",
+    "price": 550000
+  },
+  {
+    "player_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfBEAF0WRmxGwu_pD5cRckZsDrn4aEVRlpZr4GfgdAG9zCYVY7xwt8q-lOGUasx0SzfE2LuO5wUSjZ31RC77QQVGcbky694cL75E6BZbJ6Jg",
+    "player_name": "Kieron Pollard",
+    "player_country": "West Indies",
+    "playing_role": "All-rounder",
+    "rating": 9.1,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium-fast",
+    "price": 1450000
+  },
+  {
+    "player_image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSr5nE3Ucj52VOG-35Hrlp6A_fElNgMhEUSxdwQdp45egit2VTnXiN9ar5iPJcIipNJW6aoJEaZDbAvjQmgxBLSb1rv767BAQNE5IcO_6Dtn5OhzNIJoHEFJHYnID8wrdPdjQbITc-PBP6M",
+    "player_name": "Ben Cutting",
+    "player_country": "Australia",
+    "playing_role": "All-rounder",
+    "rating": 8.4,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm fast-medium",
+    "price": 820000
+  },
+  {
+    "player_image": "https://example.com/images/mujeeb.png",
+    "player_name": "Mujeeb Ur Rahman",
+    "player_country": "Afghanistan",
+    "playing_role": "Bowler",
+    "rating": 8.6,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak",
+    "price": 880000
+  },
+  {
+    "player_image": "https://example.com/images/dwayne_bravo.png",
+    "player_name": "Dwayne Bravo",
+    "player_country": "West Indies",
+    "playing_role": "All-rounder",
+    "rating": 8.8,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium-fast",
+    "price": 1100000
+  }
+]
