@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from 'react';
-
+  import { ToastContainer } from "react-toastify";
 import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers';
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
 import Navbar from './components/Navbar/Navbar';
@@ -72,6 +72,8 @@ function deletePlayer(p){
           deletePlayer={deletePlayer}
         />
       )}
+
+      <ToastContainer/>
     </div>
   );
 };

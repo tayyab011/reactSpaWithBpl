@@ -2,6 +2,7 @@
 import userPngImg from "../../assets/user 1.png";
 import flag from "../../assets/report 1.png";
 import { useState } from "react";
+import { toast } from "react-toastify";
 const SinglePlayer = ({
   player,
   setAvailableBalance,
@@ -61,7 +62,17 @@ const SinglePlayer = ({
             onClick={() => {
               const playerprice = player.price;
               if (availableBalance < playerprice) {
-                alert("not suficient balance");
+               /*  toast("not suficient balance"); */
+                toast.warn("not suficient balance", {
+                  position: "top-center",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: false,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "light",
+                });
                 return;
               } else {
                 setSelected(true);
