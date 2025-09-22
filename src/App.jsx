@@ -12,13 +12,29 @@ const App = () => {
   const [toggle,setToggle]=useState("fuck");
   const [availableBalance, setAvailableBalance] = useState(6000000);
   const [purchesedPlayers,setpurchesedPlayers]=useState([]);
+
+/*   console.log(purchesedPlayers); */
+
+function deletePlayer(p){
+  console.log(p)
+ const remainingPlayers = purchesedPlayers.filter(
+   (e) => e.player_name !== p.player_name
+ );
+ setpurchesedPlayers(remainingPlayers);
+ /*  console.log(p) */
+  setAvailableBalance(availableBalance + p.price);
+}
   return (
     <div className="">
       <Navbar availableBalance={availableBalance} />
 
       <div className="max-w-[1200px] mx-auto my-4 flex justify-between items-center">
         <div>
-          <h2 className="font-bold ">Available Players</h2>
+          <h2 className="font-bold ">
+            {toggle === "fuck"
+              ? `available players `
+              : `selected players (${purchesedPlayers.length})`}{" "}
+          </h2>
         </div>
         <div className="">
           <button
@@ -32,10 +48,10 @@ const App = () => {
           <button
             onClick={() => setToggle("you")}
             className={`py-3 px-4 rounded-r-3xl ${
-              toggle === "you" && "bg-amber-300" 
+              toggle === "you" && "bg-amber-300"
             } border-1 border-gray-200 cursor-pointer`}
           >
-            selected <span>0</span>
+            selected <span>{purchesedPlayers.length}</span>
           </button>
         </div>
       </div>
@@ -51,7 +67,10 @@ const App = () => {
           />
         </Suspense>
       ) : (
-        <SelectedPlayers />
+        <SelectedPlayers
+          purchesedPlayers={purchesedPlayers}
+          deletePlayer={deletePlayer}
+        />
       )}
     </div>
   );
